@@ -22,6 +22,8 @@ git reset --hard ...
 即可回退到指定版本
 然后执行flutter doctor ，等待重新更新下载
 
+提示：我们可以通过 flutter help命令查看到 flutter version 可以指定版本号，
+即flutter version + 版本号
 
 具体flutter sdk 跟 flutter_boost 对应的版本关系请参照FlutterBoost[官方文档](https://github.com/alibaba/flutter_boost/blob/master/README_CN.md)
 
