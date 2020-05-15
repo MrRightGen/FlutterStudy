@@ -5,6 +5,10 @@ class ActivityCell {
 
   ActivityCell({this.s, this.m, this.d});
 
+  //dart中两个同名构造函数不能重载，但是Dart语言为类新增了“命名构造方法”
+  //注意： 使用命名构造方法可以为一个类实现多个构造方法，也可以更清晰的表明意图
+  
+  //命名构造方法
   ActivityCell.fromJson(Map<String, dynamic> json) {
     s = json['s'];
     m = json['m'];

@@ -20,11 +20,9 @@ class DataUtils {
     // final jsonResponse = json.decode(jsonString);
     // IndexCell model = IndexCell.fromJson(jsonResponse);
     try {
-      print('-----');
-      print(Api.RANK_LIST);
-      print(params);
-      print('-----');
       var response = await NetUtils.get(Api.RANK_LIST, params: params);
+
+      //使用命名构造方法创建对象
       IndexCell model = IndexCell.fromJson(response);
       return model.d?.entrylist ?? List();
     } catch (e) {
